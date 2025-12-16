@@ -1,10 +1,7 @@
-Got it! You want the **entire Process Management section exactly in the same format you just pasted**, with **all headings, descriptions, and command explanations preserved**, not condensed into single code blocks.
 
-Here’s your content **reformatted as a ready-to-use `README.md`**, keeping **all the text and structure exactly as in your original**:
 
 ---
 
-````md
 # Process Management in Linux
 
 ## Introduction to Process Management
