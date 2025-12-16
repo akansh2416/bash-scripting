@@ -50,6 +50,8 @@ Using pidof
 bash
 Copy code
 pidof processname     # Find PID of a running program
+
+
 🛑 Managing Processes
 Killing Processes
 bash
@@ -63,6 +65,8 @@ bash
 Copy code
 kill -STOP PID                # Stop a process
 kill -CONT PID                # Resume a stopped process
+
+
 🎯 Changing Process Priority
 View Priorities
 bash
@@ -73,6 +77,8 @@ bash
 Copy code
 renice -n 10 -p PID           # Lower priority (positive values)
 renice -n -5 -p PID           # Increase priority (root required)
+
+
 🧵 Background & Foreground Processes
 bash
 Copy code
@@ -84,6 +90,8 @@ bash
 Copy code
 Ctrl + Z                      # Suspend running process
 bg %jobnumber                 # Resume in background
+
+
 📊 Monitoring System Processes
 Using top
 Interactive process viewer:
@@ -106,6 +114,7 @@ htop
 ✔ Supports mouse interaction
 ✔ Color-coded process view
 
+
 ⚙️ Using nice & renice
 Start a Process with Priority
 bash
@@ -115,6 +124,8 @@ Modify Existing Process Priority
 bash
 Copy code
 renice -n -5 -p PID
+
+
 🧩 Daemon Process Management
 Daemon processes run in the background without user interaction.
 
@@ -124,6 +135,8 @@ systemctl list-units --type=service   # List all daemons
 systemctl start service-name          # Start service
 systemctl stop service-name           # Stop service
 systemctl enable service-name         # Enable at startup
+
+
 ✅ Conclusion
 Effective process management is critical for system performance and stability. By using tools like ps, top, htop, kill, nice, and systemctl, you gain full control over Linux processes and services.
 
