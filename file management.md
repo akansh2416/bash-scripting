@@ -1,52 +1,66 @@
-````md
-# File Management in Linux
+# 📁 File Management in Linux
 
-## File and Directory Management
-
-- `ls` – Lists files and directories in the current location  
-- `cd /path/to/directory` – Changes the working directory  
-- `pwd` – Prints the current working directory  
-- `mkdir new_folder` – Creates a new directory  
-- `rmdir empty_folder` – Removes an empty directory  
-- `rm file.txt` – Deletes a file  
-- `rm -r folder` – Deletes a folder and its contents recursively  
-- `cp file1.txt file2.txt` – Copies a file  
-- `cp -r dir1 dir2` – Copies a directory recursively  
-- `mv old_name new_name` – Moves or renames a file or directory  
+Modern Linux file management focuses on speed, clarity, and safety when working with files and directories from the command line.
 
 ---
 
-## File Viewing and Editing
+## 📂 File & Directory Operations
 
-- `cat file.txt` – Displays file content  
-- `tac file.txt` – Displays file content in reverse order  
-- `less file.txt` – Opens a file for viewing with scrolling support  
-- `more file.txt` – Similar to `less`, but only allows forward navigation  
-- `head -n 10 file.txt` – Displays the first 10 lines of a file  
-- `tail -n 10 file.txt` – Displays the last 10 lines of a file  
-- `nano file.txt` – Opens a simple text editor  
-- `vi file.txt` – Opens a powerful text editor  
+| Command | Description |
+|------|------------|
+| `ls` | List files and directories |
+| `cd /path/to/dir` | Change directory |
+| `pwd` | Show current directory |
+| `mkdir new_folder` | Create a directory |
+| `rmdir empty_folder` | Remove an empty directory |
+| `rm file.txt` | Delete a file |
+| `rm -r folder` | Delete a directory recursively |
+| `cp file1.txt file2.txt` | Copy a file |
+| `cp -r dir1 dir2` | Copy a directory recursively |
+| `mv old_name new_name` | Move or rename files/directories |
 
 ---
 
-## Writing to Files
+## 👀 Viewing Files
 
-Overwrite existing content:
+| Command | Description |
+|------|------------|
+| `cat file.txt` | Display file contents |
+| `tac file.txt` | Display contents in reverse |
+| `less file.txt` | Scrollable file viewer |
+| `more file.txt` | Forward-only viewer |
+| `head -n 10 file.txt` | Show first 10 lines |
+| `tail -n 10 file.txt` | Show last 10 lines |
+
+---
+
+## ✏️ Editing Files
+
+| Command | Description |
+|------|------------|
+| `nano file.txt` | Simple terminal text editor |
+| `vi file.txt` | Advanced terminal editor |
+
+---
+
+## 📝 Writing to Files
+
+Overwrite file content:
 ```bash
 echo "Hello" > file.txt
-````
+Append content:
 
-Append content without overwriting:
-
-```bash
+bash
+Copy code
 echo "Hello" >> file.txt
-```
+⚡ Pro Tips
+Use ls -lh for human-readable file sizes
 
----
+Combine commands with pipes (|) for powerful workflows
 
-## Summary
+Use rm -i to avoid accidental deletions
 
-File management in Linux includes creating, deleting, copying, moving, viewing, and editing files and directories. Mastery of these commands is essential for effective system navigation and administration.
+Prefer less over cat for large files
 
-```
-```
+✅ Summary
+Linux file management is built around powerful, composable commands. Understanding these tools enables efficient navigation, editing, and automation in modern Linux environments.
