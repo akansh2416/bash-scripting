@@ -1,4 +1,4 @@
-````md
+
 # User Management in Linux
 
 ## Introduction to User Management in Linux
